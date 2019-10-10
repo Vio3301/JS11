@@ -1,0 +1,36 @@
+body{
+    width: 1233px;    
+    margin: auto;
+    /* margin: 10px; */
+    margin-top: 200px;
+}
+#scene{
+    background-image: url(rex.png);
+    height: 15px;
+    background-position: 1233px 15px;
+}
+
+#scene .dino{
+    background-image: url(rex.png);
+    transform: translateY(-50px);
+}
+
+#scene .dino.jump{
+    animation: jump 0.5s;
+}
+
+#scene .cactus{
+    background-image: url(rex.png);
+    position: absolute;
+}
+
+#scene .bird{
+    background-image: url(rex.png);
+    position: absolute;
+}
+
+@keyframes jump{
+    0%{ transform: translateY(-50px) } 
+    50%{ transform: translateY(-130px) }
+    100%{ transform: translateY(-50px) }
+}
